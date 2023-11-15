@@ -1,5 +1,5 @@
 .header_container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
 }
 .left_header ul {
@@ -8,7 +8,7 @@
 .header_item {
   width: 233px;
   height: 50px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   display: flex;
   justify-content: space-between;

@@ -1,6 +1,7 @@
 import React from "react";
 
 import vector from "../../assets/img/Vector.svg";
+import right_arrow from "../../assets/img/right_arrow.svg";
 import master from "../../assets/img/master.svg";
 
 export const SectionC = () => {
@@ -74,7 +75,7 @@ export const SectionC = () => {
             </div>
             <button class="master_class-carusel">
               <a href="">
-                <img src="./img/Vector (1).svg" alt="" />
+                <img src={right_arrow} alt="" />
               </a>
             </button>
           </div>

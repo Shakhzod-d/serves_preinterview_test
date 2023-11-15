@@ -1,8 +1,6 @@
 import React from "react";
 
-import frame_7 from "../../assets/img/Frame 7.svg";
-import man from "../../assets/img/man-by-truck-guy-delivery-uniform-man-with-clipboard 1.svg";
-import servce from "../../assets/img/servic 1.svg";
+import { data } from "./helper";
 
 export const SectionB = () => {
   return (
@@ -10,36 +8,21 @@ export const SectionB = () => {
       <header class="header_two">
         <div class="container">
           <div class="servis">
-            <div class="server_blog">
-              <img src={servce} alt="" />
-              <p class="server_blog_text">СЕРВИС ОБОРУДОВАНИЯ</p>
-              <p class="server_blog_tittle">
-                Компания предоставляет сервисное обслуживание по всем
-                предоставляемым продуктам. У наших инженеров имеется опыт и
-                сертификаты фирм производителей......
-              </p>
-              <button>Подробнее</button>
-            </div>
-            <div class="server_blog">
-              <img src={frame_7} alt="" />
-              <p class="server_blog_text">РЕГИСТРАЦИИ</p>
-              <p class="server_blog_tittle">
-                Обеспечение получения разрешительных документов,
-                регистрационного удостоверения на изделия медицинского
-                назначения Подготовка объектов к проведению ....
-              </p>
-              <button>Подробнее</button>
-            </div>
-            <div class="server_blog">
-              <img src={man} alt="" />
-              <p class="server_blog_text">УСЛУГИ ЛОГИСТИКИ</p>
-              <p class="server_blog_tittle">
-                Компания предоставляет сервисное обслуживание по всем
-                предоставляемым продуктам. У наших инженеров имеется опыт и
-                сертификаты фирм производителей.....
-              </p>
-              <button>Подробнее</button>
-            </div>
+            {data?.map((item) => {
+              const { id, title, imageUrl, describtion, buttonName } = item;
+              return (
+                <div class="server_blog" key={id}>
+                  <div>
+                    <img src={imageUrl} alt="" />
+                  </div>
+                  <div className="card_footer">
+                    <p class="server_blog_text">{title}</p>
+                    <p class="server_blog_tittle">{describtion}</p>
+                    <button>{buttonName}</button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </header>

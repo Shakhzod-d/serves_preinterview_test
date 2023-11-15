@@ -1,7 +1,7 @@
 .section {
   width: 1920;
   height: 980px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   background-image: url("../../assets/images/blur-hospital.png");
   background-position: center;

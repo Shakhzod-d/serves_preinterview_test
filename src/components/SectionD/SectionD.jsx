@@ -9,7 +9,7 @@ import six from "../../assets/img/6.svg";
 import seven from "../../assets/img/7.svg";
 import eight from "../../assets/img/8.svg";
 import vector from "../../assets/img/Vector.svg";
-import vector_1 from "../../assets/img/Vector (1).svg";
+import vector_1 from "../../assets/img/right_arrow.svg";
 
 export const SectionD = () => {
   return (
